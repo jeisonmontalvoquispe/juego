@@ -1,0 +1,56 @@
+/* Fondo general */
+body {
+  font-family: Arial, sans-serif;
+  background: crimson; /* Fondo sólido oscuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor con fondo de color */
+.container {
+  background:  rgba(36, 6, 135, 0.85); /* Fondo semi-transparente */
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  border: 3px solid #4CAF50; /* Borde verde para resaltar */
+}
+
+/* Imagen superior */
+.top-image {
+  width: 100%;           /* Que ocupe todo el ancho */
+  max-height: 250px;     /* Altura máxima */
+  object-fit: cover;     /* Ajuste para no deformar */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+p {
+  font-size: 1.2em;
+}
+
+/* Botones */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  text-decoration: none;
+  background: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1b551e;
+}

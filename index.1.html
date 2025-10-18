@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio de la aventura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Imagen superior -->
+    <img src="images/img1.png" alt="Lapaz Santacruz" class="top-image">
+
+    <!-- Texto dinámico de la historia -->
+    <p id="storyText"></p>
+
+    <!-- Botones de decisión -->
+    <div class="buttons">
+      <a href="index.10.html" class="btn">Santa Cruz </a>
+      <a href="index.3.html" class="btn">La Paz </a>
+    </div>
+  </div>
+
+  <script>
+    // Obtener los parámetros de la URL
+    const params = new URLSearchParams(window.location.search);
+
+    // Capturamos nombre y país (el género lo podrías usar después si quieres)
+    const name = params.get("name") || "vi";
+    const country = params.get("country") || "un lugar especial";
+
+    // Personalizar el texto de la historia
+    const storyText = document.getElementById("storyText");
+    storyText.innerHTML = `
+    ${name} Es tus vacaciones de fin de año y quieres ir a conocer nuevos lugares
+    donde nunca antes fuiste.
+    ¿Donde quieres ir?
+    `;
+    
+  </script>
+</body>
+</html>
